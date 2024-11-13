@@ -19,7 +19,7 @@ jobs:
           dotnet-version: "7.x" # Use the appropriate .NET version
 
       - name: Restore dependencies
-        run: dotnet restore
+        run: dotnet restore FuncTest.sln
 
       - name: Build
         run: dotnet build --configuration Release --no-restore
